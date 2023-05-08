@@ -1,0 +1,13 @@
+1.hello world - simple text
+2.bootsrap - alert
+3.
+4.xml views - adding how to display values
+5.controllers - onclicking a button shows a alert
+6.modules - onclicking a button shows a different text
+7.json model - getting input
+8.translatable texts - printing the input text
+9.Component Configuration - onclicking an button printing the input text
+10.
+11. diffenrnt pages ,sections
+12. adjust width
+13.
