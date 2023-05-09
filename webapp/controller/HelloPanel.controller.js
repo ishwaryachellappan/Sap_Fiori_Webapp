@@ -1,8 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast",
-	"sap/ui/core/Fragment"
-], function (Controller, MessageToast, Fragment) {
+	"sap/m/MessageToast"
+], function (Controller, MessageToast) {
 	"use strict";
 
 	return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
@@ -18,12 +17,13 @@ sap.ui.define([
 		},
 
 		onOpenDialog : function () {
-
+			// create dialog lazily
 			if (!this.pDialog) {
 				this.pDialog = this.loadFragment({
 					name: "sap.ui.demo.walkthrough.view.HelloDialog"
 				});
-			} 
+			}
+
 			this.pDialog.then(function(oDialog) {
 				oDialog.open();
 			});
